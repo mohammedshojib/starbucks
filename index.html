@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+     <header>
+        <a href="#"><img src="images/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu
+            </a></li>
+            <li><a href="#">Whats new</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>Its not just coffee <br>Its <span> Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quia quibusdam consectetur ullam est accusamus nulla unde incidunt, voluptates autem.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="images/img1.png" alt="">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li>
+            <img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('')">
+        </li>
+        <li>
+            <img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor">
+        </li>
+        <li>
+            <img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor">
+        </li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"></a><img src="images/facebook.png"></li>
+        <li><a href="#"></a><img src="images/twitter.png" ></li>
+        <li><a href="#"></a><img src="images/instagram.png"></li>
+    </ul>
+</section>
+<script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.starbucks').src = anything;
+}
+function changeCircleColor(color){
+    const circle = document.querySelector('.circle')
+    .circle.style.background = color
+}
+</script>
+</body>
+</html>
